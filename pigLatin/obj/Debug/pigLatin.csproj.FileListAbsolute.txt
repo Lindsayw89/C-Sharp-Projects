@@ -1,0 +1,7 @@
+C:\Users\Linds\Documents\C#-projects\C-Sharp-Projects\pigLatin\bin\Debug\pigLatin.exe.config
+C:\Users\Linds\Documents\C#-projects\C-Sharp-Projects\pigLatin\bin\Debug\pigLatin.exe
+C:\Users\Linds\Documents\C#-projects\C-Sharp-Projects\pigLatin\bin\Debug\pigLatin.pdb
+C:\Users\Linds\Documents\C#-projects\C-Sharp-Projects\pigLatin\obj\Debug\pigLatin.csprojAssemblyReference.cache
+C:\Users\Linds\Documents\C#-projects\C-Sharp-Projects\pigLatin\obj\Debug\pigLatin.csproj.CoreCompileInputs.cache
+C:\Users\Linds\Documents\C#-projects\C-Sharp-Projects\pigLatin\obj\Debug\pigLatin.exe
+C:\Users\Linds\Documents\C#-projects\C-Sharp-Projects\pigLatin\obj\Debug\pigLatin.pdb
