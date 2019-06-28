@@ -1,0 +1,7 @@
+C:\Users\Linds\Documents\C#-projects\Class201Csharp\obj\Debug\Class201Csharp.csprojAssemblyReference.cache
+C:\Users\Linds\Documents\C#-projects\Class201Csharp\obj\Debug\Class201Csharp.csproj.CoreCompileInputs.cache
+C:\Users\Linds\Documents\C#-projects\Class201Csharp\bin\Debug\Class201Csharp.exe.config
+C:\Users\Linds\Documents\C#-projects\Class201Csharp\bin\Debug\Class201Csharp.exe
+C:\Users\Linds\Documents\C#-projects\Class201Csharp\bin\Debug\Class201Csharp.pdb
+C:\Users\Linds\Documents\C#-projects\Class201Csharp\obj\Debug\Class201Csharp.exe
+C:\Users\Linds\Documents\C#-projects\Class201Csharp\obj\Debug\Class201Csharp.pdb
