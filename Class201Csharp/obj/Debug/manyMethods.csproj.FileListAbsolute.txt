@@ -1,0 +1,7 @@
+C:\Users\Linds\Documents\C#-projects\C-Sharp-Projects\Class201Csharp\bin\Debug\Class201Csharp.exe.config
+C:\Users\Linds\Documents\C#-projects\C-Sharp-Projects\Class201Csharp\bin\Debug\Class201Csharp.exe
+C:\Users\Linds\Documents\C#-projects\C-Sharp-Projects\Class201Csharp\bin\Debug\Class201Csharp.pdb
+C:\Users\Linds\Documents\C#-projects\C-Sharp-Projects\Class201Csharp\obj\Debug\manyMethods.csprojAssemblyReference.cache
+C:\Users\Linds\Documents\C#-projects\C-Sharp-Projects\Class201Csharp\obj\Debug\manyMethods.csproj.CoreCompileInputs.cache
+C:\Users\Linds\Documents\C#-projects\C-Sharp-Projects\Class201Csharp\obj\Debug\Class201Csharp.exe
+C:\Users\Linds\Documents\C#-projects\C-Sharp-Projects\Class201Csharp\obj\Debug\Class201Csharp.pdb
