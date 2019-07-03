@@ -12,30 +12,31 @@ namespace rockPaperScissors
         {
 
 
-
-
-
-            string inputCPU;
-            int playerOneScore = 0;
-            int CPUScore = 0;
+            
+            
             bool playAgain = true;
 
             while (playAgain)
             {
+
+                int playerOneScore = 0;
+                int CPUScore = 0;
+
                 while (playerOneScore < 3 && CPUScore < 3)
                 {
-
+                    
                     Console.WriteLine("choose: rock, paper, or scissors");
-                    string playerOne = Console.ReadLine();
+                    string playerOne = Console.ReadLine().ToLower();
 
-                    Random rnd = new Random();
+                    Random num = new Random();
+                    //int inputCPU = 
 
-                    int randomInt = rnd.Next(1, 4);
-
+                    int randomInt = num.Next(1, 4);
+                    
                     switch (randomInt)
                     {
                         case 1:
-                            inputCPU = "rock";
+                            //inputCPU = "rock";
                             Console.WriteLine("Computer chose Rock");
                             if (playerOne == "rock")
                             {
@@ -54,9 +55,13 @@ namespace rockPaperScissors
                                 CPUScore++;
                                 Console.WriteLine("COMPUTER SCORE: " + CPUScore);
                             }
+                            else
+                            {
+                                Console.WriteLine("typo");
+                            }
                             break;
                         case 2:
-                            inputCPU = "paper";
+                            //inputCPU = "paper";
                             Console.WriteLine("Computer chose paper");
                             if (playerOne == "rock")
                             {
@@ -74,9 +79,13 @@ namespace rockPaperScissors
                                 playerOneScore++;
                                 Console.WriteLine("YOUR SCORE: " + playerOneScore);
                             }
+                            else
+                            {
+                                Console.WriteLine("typo");
+                            }
                             break;
                         case 3:
-                            inputCPU = "scissors";
+                            //inputCPU = "scissors";
                             Console.WriteLine("Computer chose scissors");
                             if (playerOne == "rock")
                             {
@@ -94,12 +103,18 @@ namespace rockPaperScissors
                             {
                                 Console.WriteLine("Draw!");
                             }
-                            break;
-                        default:
+                            else
                             {
-                                Console.WriteLine("you made a typo, try again");
+                                Console.WriteLine("typo");
                             }
                             break;
+                   
+                            //else if (playerOne == "rock" || playerOne == "paper" || playerOne == "scissors")
+                            {
+                                Console.WriteLine("typo");
+
+                            }
+                           
 
                     }
 
@@ -120,7 +135,7 @@ namespace rockPaperScissors
                 {
                     playAgain = true;
                 }
-                else if (loop == "n") ;
+                else if (loop == "n")
                 {
                     playAgain = false;
                 }
