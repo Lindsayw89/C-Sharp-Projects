@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "rockPaperScissors", "..\roc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicTacToe", "..\TicTacToe\TicTacToe.csproj", "{332C9AA7-78C1-42E1-AF3A-49D0110D70D5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "masterMind", "..\masterMind\masterMind.csproj", "{D5C49692-2F49-4877-A1CF-DD97A541D593}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{332C9AA7-78C1-42E1-AF3A-49D0110D70D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{332C9AA7-78C1-42E1-AF3A-49D0110D70D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{332C9AA7-78C1-42E1-AF3A-49D0110D70D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5C49692-2F49-4877-A1CF-DD97A541D593}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5C49692-2F49-4877-A1CF-DD97A541D593}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5C49692-2F49-4877-A1CF-DD97A541D593}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5C49692-2F49-4877-A1CF-DD97A541D593}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

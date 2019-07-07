@@ -1,0 +1,7 @@
+C:\Users\Linds\Documents\C#-projects\C-Sharp-Projects\masterMind\bin\Debug\masterMind.exe.config
+C:\Users\Linds\Documents\C#-projects\C-Sharp-Projects\masterMind\bin\Debug\masterMind.exe
+C:\Users\Linds\Documents\C#-projects\C-Sharp-Projects\masterMind\bin\Debug\masterMind.pdb
+C:\Users\Linds\Documents\C#-projects\C-Sharp-Projects\masterMind\obj\Debug\masterMind.csprojAssemblyReference.cache
+C:\Users\Linds\Documents\C#-projects\C-Sharp-Projects\masterMind\obj\Debug\masterMind.csproj.CoreCompileInputs.cache
+C:\Users\Linds\Documents\C#-projects\C-Sharp-Projects\masterMind\obj\Debug\masterMind.exe
+C:\Users\Linds\Documents\C#-projects\C-Sharp-Projects\masterMind\obj\Debug\masterMind.pdb

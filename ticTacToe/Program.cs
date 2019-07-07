@@ -52,12 +52,12 @@ namespace TicTacToe
             //check for win code here, ideally call a function
             if (HorizontalWin() == true || VerticalWin() == true || DiagonalWin() == true)
             {
-                Console.WriteLine("WEINER!!!!!!!!!!!!!!!!!1");
+                Console.WriteLine("WINNER!!!!!!!!!!");
             }
 
-            if (CheckForTie() == true)
+            else if (CheckForTie() == true)
             {
-                Console.WriteLine("NO WEINER!!@!!!!!!!!!!!1111111111111");
+                Console.WriteLine("NO WINNER!!!!!!!");
             }
 
             ChangePlayer();
