@@ -25,8 +25,9 @@ namespace TicTacToe
                 DrawBoard();
                 GetInput();
 
-            } while (!CheckForWin() && !CheckForTie());
+            } while (!HorizontalWin() && !VerticalWin() && !CheckForTie() && !DiagonalWin());
 
+            DrawBoard();
             // leave this command at the end so your program does not close automatically
             Console.ReadLine();
         }
@@ -49,6 +50,15 @@ namespace TicTacToe
             board[row][column] = playerTurn;
 
             //check for win code here, ideally call a function
+            if (HorizontalWin() == true || VerticalWin() == true || DiagonalWin() == true)
+            {
+                Console.WriteLine("WEINER!!!!!!!!!!!!!!!!!1");
+            }
+
+            if (CheckForTie() == true)
+            {
+                Console.WriteLine("NO WEINER!!@!!!!!!!!!!!1111111111111");
+            }
 
             ChangePlayer();
         }
@@ -66,94 +76,80 @@ namespace TicTacToe
 
         }
 
-        public static bool CheckForWin()
-        {
-            // your code goes here
-
-            return false;
-        }
-
         public static bool CheckForTie()
         {
-            // your code goes here
-
-            return false;
+            bool tie1 = true;
+            for (int i = 1; i <  3; i++)
+            {
+                for (int j = 0; j < 3; j++)
+                {
+                    if (board[i][j] == " ")
+                    {
+                        tie1 = false;
+                    }
+                }
+            }
+            return tie1;
         }
 
         public static bool HorizontalWin()
         {
-            //repeat of int
-            int row = int.Parse(Console.ReadLine());
-            int column = int.Parse(Console.ReadLine());
-            if (row == 0 && column == 0 && column == 1 && column == 2)
+            bool winner = false;
+            for (int i = 0; i < 3; i++)
             {
-                Console.WriteLine("X is the winner!");
-            }
-            else if (row == 1 && column == 0 && column == 1 && column == 2)
-            {
-                Console.WriteLine("X is the winner!");
-            }
-            else if (row == 2 && column == 0 && column == 1 && column == 2)
-            {
-                Console.WriteLine("X is the winner!");
+                //checks horizontal first, then vertical, example: if horizontal match AND none are blank, then winner
+                if ((board[i][0] == board[i][1] && board[i][0] == board[i][2]) && (board[i][0] != " "))
+                {
+                    winner = true;
+                }
             }
 
-
-            //is not applying to my code
-            return false;
+            return winner;
         }
+
+
 
         public static bool VerticalWin()
         {
-            //repeating code
-            int row = int.Parse(Console.ReadLine());
-            int column = int.Parse(Console.ReadLine());
-            if (column == 0 && row == 0 && row == 1 && row == 2)
+            bool winner = false;
+            for (int i = 0; i < 3; i++)
             {
-                Console.WriteLine("X is the winner!");
-            }
-            else if (column == 1 && row == 0 && row == 1 && row == 2)
-            {
-                Console.WriteLine("X is the winner!");
-            }
-            else if (column == 2 && row == 0 && row == 1 && row == 2)
-            {
-                Console.WriteLine("X is the winner!");
-            }
+                //checks vertical, AND none are blank, then winner
+                if ((board[0][i] == board[1][i] && board[0][i] == board[2][i]) && (board[0][i] != " "))
+                {
+                    winner = true;
+                }
 
-            //not applying to my code
-            return false;
+            }
+            return winner;
         }
 
-        public static bool DiagonalWin()
-        {
-            //repeating code
-            int row = int.Parse(Console.ReadLine());
-            int column = int.Parse(Console.ReadLine());
-            if (column == 0 && column == 1 && column == 2 && row == 0 && row == 1 && row == 2)
+            public static bool DiagonalWin()
             {
-                Console.WriteLine("X is the winner!");
-            }
-            else if (row == 0 && row == 1 && row == 2 && column == 0 && column == 1 && column == 2)
-            {
-                Console.WriteLine("X is the winner!");
+                bool winner = false;
+                if (((board[0][0] == board[1][1] && board[0][0] == board[2][2]) && (board[0][0] != " ")) ||
+                        ((board[2][0] == board[1][1] && board[2][0] == board[0][2]) && (board[2][0] != " ")))
+                {
+                    winner = true;
+                }
+                return winner;
             }
 
-            //not applying to code
-            return false;
-        }
+            public static void DrawBoard()
+            {
+                Console.WriteLine("  0 1 2");
+                Console.WriteLine("0 " + String.Join("|", board[0]));
+                Console.WriteLine("  -----");
+                Console.WriteLine("1 " + String.Join("|", board[1]));
+                Console.WriteLine("  -----");
+                Console.WriteLine("2 " + String.Join("|", board[2]));
+            }
 
-        public static void DrawBoard()
-        {
-            Console.WriteLine("  0 1 2");
-            Console.WriteLine("0 " + String.Join("|", board[0]));
-            Console.WriteLine("  -----");
-            Console.WriteLine("1 " + String.Join("|", board[1]));
-            Console.WriteLine("  -----");
-            Console.WriteLine("2 " + String.Join("|", board[2]));
         }
+        }
+    
 
-    }
+
 
     
-}
+
