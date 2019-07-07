@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pigLatin", "..\pigLatin\pig
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "rockPaperScissors", "..\rockPaperScissors\rockPaperScissors.csproj", "{3C7250B6-9ECD-4EDF-BC4F-270AD654BE69}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ticTacToe2", "..\ticTacToe2\ticTacToe2.csproj", "{CA567F9E-7D59-4E7C-A95C-1F9F5CE6CC7B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicTacToe", "..\TicTacToe\TicTacToe.csproj", "{332C9AA7-78C1-42E1-AF3A-49D0110D70D5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,10 @@ Global
 		{3C7250B6-9ECD-4EDF-BC4F-270AD654BE69}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3C7250B6-9ECD-4EDF-BC4F-270AD654BE69}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3C7250B6-9ECD-4EDF-BC4F-270AD654BE69}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CA567F9E-7D59-4E7C-A95C-1F9F5CE6CC7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CA567F9E-7D59-4E7C-A95C-1F9F5CE6CC7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CA567F9E-7D59-4E7C-A95C-1F9F5CE6CC7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CA567F9E-7D59-4E7C-A95C-1F9F5CE6CC7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{332C9AA7-78C1-42E1-AF3A-49D0110D70D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{332C9AA7-78C1-42E1-AF3A-49D0110D70D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{332C9AA7-78C1-42E1-AF3A-49D0110D70D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{332C9AA7-78C1-42E1-AF3A-49D0110D70D5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
