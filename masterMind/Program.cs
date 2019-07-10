@@ -8,19 +8,10 @@ namespace masterMind
 {
     class Program
     {
+        static bool isRunning = true;
         static void Main(string[] args)
         {
-           /*  do
-            {
-                DrawBoard();
-                GetInput();
-
-            } while (!HorizontalWin() && !VerticalWin() && !CheckForTie() && !DiagonalWin());
-            */ //exaple from tic tac toe
-
-
-
-
+    
 
 
             Random rnd = new Random();
@@ -28,15 +19,15 @@ namespace masterMind
             int colorRandom1 = rnd.Next(1, 4);
             int colorRandom2 = rnd.Next(1, 4);
 
-           
-            Console.WriteLine(" I am thinking of 2 random colors");
-             Console.WriteLine("your color choices are red, yellow, & blue");
-            Console.WriteLine("Enter your first color");
-            string colorChoice1 = Console.ReadLine().ToLower();
-            Console.WriteLine("enter your next color guess");
-            string colorChoice2 = Console.ReadLine().ToLower();
+            do
+            {
+                Console.WriteLine(" I am thinking of 2 random colors");
+                Console.WriteLine("your color choices are red, yellow, & blue");
+                Console.WriteLine("Enter your first color");
+                string colorChoice1 = Console.ReadLine().ToLower();
+                Console.WriteLine("enter your next color guess");
+                string colorChoice2 = Console.ReadLine().ToLower();
 
-            
                 int colorA = 0;
                 int colorB = 0;
 
@@ -69,38 +60,53 @@ namespace masterMind
                 {
                     colorB = 3;
                 }
+                getClue(colorRandom1, colorRandom2, colorA, colorB);
+
+                Console.WriteLine(colorA);
+                Console.WriteLine(colorB);
+                Console.WriteLine(colorRandom1);
+                Console.WriteLine(colorRandom2);
+                
 
 
-                if (colorRandom1 == colorA && colorRandom2 == colorB)
-                {
-                    Console.WriteLine("you won!");
-                }
-                else if (colorRandom1 != colorA && colorRandom2 != colorB)
-                {
-                    Console.WriteLine("clue 0-0");
-                }
-                else if (colorRandom1 == colorB || colorRandom2 == colorA)
-                {
-                    Console.WriteLine("clue 1-0");
-                }
-                else if (colorRandom1 == colorA && colorRandom2 != colorB || colorRandom1 != colorA && colorRandom2 == colorB)
-                {
-                    Console.WriteLine("clue 1-1");
-                } else if (colorRandom1 == colorB && colorRandom1 == colorA)
-                {
-                    Console.WriteLine("clue 2-0");
-                }
+            } while (isRunning);
 
-           
-
-
-            Console.WriteLine(colorA);
-            Console.WriteLine(colorB);
-            Console.WriteLine(colorRandom1);
-            Console.WriteLine(colorRandom2);
             Console.ReadKey();
 
 
+
+
+
+
         }
+
+        public static void getClue(int colorRandom1, int colorRandom2, int colorA, int colorB)
+        {
+            if (colorRandom1 == colorA && colorRandom2 == colorB)
+            {
+                Console.WriteLine("you won!");
+                isRunning = false;
+            }
+            else if (colorRandom1 != colorA && colorRandom2 != colorB)
+            {
+                Console.WriteLine("clue 0-0");
+            }
+            else if (colorRandom1 == colorB || colorRandom2 == colorA)
+            {
+                Console.WriteLine("clue 1-0");
+            }
+            else if (colorRandom1 == colorA && colorRandom2 != colorB || colorRandom1 != colorA && colorRandom2 == colorB)
+            {
+                Console.WriteLine("clue 1-1");
+            }
+            else if (colorRandom1 == colorB && colorRandom1 == colorA)
+            {
+                Console.WriteLine("clue 2-0");
+            }
+
+        }
+
+
+
     }
 }
