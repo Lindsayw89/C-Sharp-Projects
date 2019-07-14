@@ -19,6 +19,10 @@ namespace masterMind
             int colorRandom1 = rnd.Next(1, 4);
             int colorRandom2 = rnd.Next(1, 4);
 
+
+
+
+
             do
             {
                 Console.WriteLine(" I am thinking of 2 random colors");
@@ -62,21 +66,16 @@ namespace masterMind
                 }
                 getClue(colorRandom1, colorRandom2, colorA, colorB);
 
-                Console.WriteLine(colorA);
-                Console.WriteLine(colorB);
-                Console.WriteLine(colorRandom1);
-                Console.WriteLine(colorRandom2);
+                //Console.WriteLine(colorA);
+                //Console.WriteLine(colorB);
+                //Console.WriteLine(colorRandom1);
+               // Console.WriteLine(colorRandom2);
                 
 
 
             } while (isRunning);
 
             Console.ReadKey();
-
-
-
-
-
 
         }
 
@@ -103,6 +102,9 @@ namespace masterMind
             {
                 Console.WriteLine("clue 2-0");
             }
+
+
+
 
         }
 

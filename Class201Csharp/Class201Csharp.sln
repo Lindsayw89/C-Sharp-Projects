@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicTacToe", "..\TicTacToe\T
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "masterMind", "..\masterMind\masterMind.csproj", "{D5C49692-2F49-4877-A1CF-DD97A541D593}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gradeBook", "..\gradeBook\gradeBook.csproj", "{A8C8CBBB-A058-46D0-800E-3BC614E01EAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "towersOfHanoi", "..\towersOfHanoi\towersOfHanoi.csproj", "{D6B07FA5-C66C-440C-8AC8-AE4F693386B5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{D5C49692-2F49-4877-A1CF-DD97A541D593}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D5C49692-2F49-4877-A1CF-DD97A541D593}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D5C49692-2F49-4877-A1CF-DD97A541D593}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8C8CBBB-A058-46D0-800E-3BC614E01EAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8C8CBBB-A058-46D0-800E-3BC614E01EAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8C8CBBB-A058-46D0-800E-3BC614E01EAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8C8CBBB-A058-46D0-800E-3BC614E01EAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6B07FA5-C66C-440C-8AC8-AE4F693386B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6B07FA5-C66C-440C-8AC8-AE4F693386B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6B07FA5-C66C-440C-8AC8-AE4F693386B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6B07FA5-C66C-440C-8AC8-AE4F693386B5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

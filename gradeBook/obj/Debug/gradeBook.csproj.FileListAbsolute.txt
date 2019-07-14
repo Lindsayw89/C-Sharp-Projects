@@ -1,0 +1,7 @@
+C:\Users\Linds\Documents\C#-projects\C-Sharp-Projects\gradeBook\bin\Debug\gradeBook.exe.config
+C:\Users\Linds\Documents\C#-projects\C-Sharp-Projects\gradeBook\bin\Debug\gradeBook.exe
+C:\Users\Linds\Documents\C#-projects\C-Sharp-Projects\gradeBook\bin\Debug\gradeBook.pdb
+C:\Users\Linds\Documents\C#-projects\C-Sharp-Projects\gradeBook\obj\Debug\gradeBook.csprojAssemblyReference.cache
+C:\Users\Linds\Documents\C#-projects\C-Sharp-Projects\gradeBook\obj\Debug\gradeBook.csproj.CoreCompileInputs.cache
+C:\Users\Linds\Documents\C#-projects\C-Sharp-Projects\gradeBook\obj\Debug\gradeBook.exe
+C:\Users\Linds\Documents\C#-projects\C-Sharp-Projects\gradeBook\obj\Debug\gradeBook.pdb
