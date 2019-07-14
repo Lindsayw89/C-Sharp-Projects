@@ -19,13 +19,9 @@ namespace gradeBook
 
             while (studentName!="quit")
             {
-               
-
-               
+              
                 Console.WriteLine("enter the student's grades");
                 string studentGrade = Console.ReadLine();
-
-                
 
                 
                 gradeAverage.Add(studentName, studentGrade);
