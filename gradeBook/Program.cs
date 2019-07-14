@@ -8,22 +8,26 @@ namespace gradeBook
 {
     class Program
     {
-        static bool userWantsToEnter = true;
+        static string studentName;
         static void Main(string[] args)
         {
 
+            Console.WriteLine("enter a student name or type quit to quit");
+            studentName = Console.ReadLine().ToLower();
 
-            while(userWantsToEnter) {
-                Dictionary<string, string> gradeAverage = new Dictionary<string, string>();
+            Dictionary<string, string> gradeAverage = new Dictionary<string, string>();
 
-                Console.WriteLine("enter a student name or type quit to quit");
-                string studentName = Console.ReadLine();
+            while (studentName!="quit")
+            {
+               
+
+               
                 Console.WriteLine("enter the student's grades");
                 string studentGrade = Console.ReadLine();
-                
+
                 
 
-
+                
                 gradeAverage.Add(studentName, studentGrade);
 
                 foreach (string item in gradeAverage.Keys)
@@ -36,8 +40,9 @@ namespace gradeBook
                 getLowestGrade(studentGrade);
                 getHighestGrade(studentGrade);
 
-              
-                
+                Console.WriteLine("enter a student name or type quit to quit");
+                studentName = Console.ReadLine();
+
             } 
 
             Console.ReadKey();
@@ -62,17 +67,16 @@ namespace gradeBook
 
         }
 
-        public static void quitProgram()
+        public static bool quitProgram(string studentName)
         {
-            string quit = Console.ReadLine();
-            if(quit=="quit")
-            {
-                userWantsToEnter = false;
 
+        if(studentName=="quit")
+            {
+                return false;
             }
             else
             {
-                userWantsToEnter = true;
+                return true;
             }
         }
 
