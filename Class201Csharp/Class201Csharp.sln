@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gradeBook", "..\gradeBook\g
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "towersOfHanoi", "..\towersOfHanoi\towersOfHanoi.csproj", "{D6B07FA5-C66C-440C-8AC8-AE4F693386B5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "poCos", "..\poCos\poCos.csproj", "{4A748108-7DF0-4E83-8528-2E17E5AD5F7C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{D6B07FA5-C66C-440C-8AC8-AE4F693386B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D6B07FA5-C66C-440C-8AC8-AE4F693386B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D6B07FA5-C66C-440C-8AC8-AE4F693386B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A748108-7DF0-4E83-8528-2E17E5AD5F7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A748108-7DF0-4E83-8528-2E17E5AD5F7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A748108-7DF0-4E83-8528-2E17E5AD5F7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A748108-7DF0-4E83-8528-2E17E5AD5F7C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

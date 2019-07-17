@@ -1,0 +1,7 @@
+C:\Users\Linds\Documents\C#-projects\C-Sharp-Projects\poCos\obj\Debug\poCos.csprojAssemblyReference.cache
+C:\Users\Linds\Documents\C#-projects\C-Sharp-Projects\poCos\obj\Debug\poCos.csproj.CoreCompileInputs.cache
+C:\Users\Linds\Documents\C#-projects\C-Sharp-Projects\poCos\bin\Debug\poCos.exe.config
+C:\Users\Linds\Documents\C#-projects\C-Sharp-Projects\poCos\bin\Debug\poCos.exe
+C:\Users\Linds\Documents\C#-projects\C-Sharp-Projects\poCos\bin\Debug\poCos.pdb
+C:\Users\Linds\Documents\C#-projects\C-Sharp-Projects\poCos\obj\Debug\poCos.exe
+C:\Users\Linds\Documents\C#-projects\C-Sharp-Projects\poCos\obj\Debug\poCos.pdb

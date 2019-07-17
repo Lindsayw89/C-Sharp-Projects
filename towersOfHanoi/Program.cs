@@ -19,10 +19,11 @@ namespace towersOfHanoi
                 DrawBoard();
                 getUserSelection();
 
-            } while(!checkForWin());
+            } while(!GameWin());
 
             Console.ReadKey();
         }
+        
         public static void FirstBoard()
             //setting up information for the game to print
         {   //declaring row that will be used
@@ -51,6 +52,7 @@ namespace towersOfHanoi
             Console.WriteLine("which row do you want to move to?");
             int pieceTo = Convert.ToInt32(Console.ReadLine());
             followRules(pieceFrom, pieceTo);
+           
 
         }
         public static void followRules(int pieceFrom, int pieceTo)
@@ -61,33 +63,42 @@ namespace towersOfHanoi
             int movingToIndex;
             int movingToPiece;
             int movingFromPiece = board[movingFromRow][movingFromIndex];
-           
-           
-            if(board[movingToRow].Count==0)
+
+          
+            if (board[movingToRow].Count==0)
             {
                 movingToIndex = 0;
                 board[movingToRow].Add(movingFromPiece);
                 movingToPiece = board[movingToRow][movingToIndex];
                 board[movingFromRow].RemoveAt(movingFromIndex);
+              
+
             }
             else
             {
                 movingToIndex = board[movingToRow].Count;
                 movingToPiece = board[movingToRow][movingToIndex-1];
 
-                if ((board[movingFromRow].Count != 0 || movingFromPiece < movingToPiece))
+                if ((board[movingFromRow].Count != 0 && movingFromPiece < movingToPiece)) 
                 {
                     board[movingToRow].Add(movingFromPiece);
                     board[movingFromRow].RemoveAt(movingFromIndex);
-
                 }
+             
+            }
+            if(movingFromPiece > movingToPiece)
+            {
+                Console.WriteLine("INVALID MOVE! TRY AGAIN!!");
             }
 
-            Console.WriteLine(movingToPiece+ "**");
-            
-      
-            }
-        public static bool checkForWin()
+            //Console.WriteLine(movingToPiece+ "**");
+            /*else if (board[movingFromRow].Count == 0)
+            {
+                Console.WriteLine("NOO");
+            }*/
+
+        }
+        public static bool GameWin()
         {
             if(board[2].Count == 4)
             {
