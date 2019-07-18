@@ -12,7 +12,8 @@ namespace towersOfHanoi
         public static List<List<int>> Board { get => board; set => board = value; }
 
         static void Main(string[] args)
-        {// the program draws how we want the board to initially look
+        {
+            // the program draws how we want the board to initially look
             FirstBoard();
 
             //then it goes through the loop of drawing the board & getting input ,while the user has not won
@@ -51,7 +52,7 @@ namespace towersOfHanoi
             // asking the user to enter the row number to take and row to place to
             Console.WriteLine("which row do you want to move from?");
 
-            //system reading the user's answer 
+            //system reading the user's answer to know where to move the pieces
             int pieceFrom =Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("which row do you want to move to? 1 ,2, or 3?");
             int pieceTo = Convert.ToInt32(Console.ReadLine());
@@ -72,7 +73,8 @@ namespace towersOfHanoi
             int movingToPiece;
             int movingFromPiece = board[movingFromRow][movingFromIndex]; //
 
-          
+          //if the the user is moving the piece to a row with no pieces, then it will add it to the first place(index zero)
+          // and remove it from where it got the piece from
             if (board[movingToRow].Count==0)
             {
                 movingToIndex = 0;
@@ -87,7 +89,7 @@ namespace towersOfHanoi
                 movingToIndex = board[movingToRow].Count;
                 movingToPiece = board[movingToRow][movingToIndex-1];
                 // as long as row that we are grabbing a piece from is not empty and the number we are putting on is bigger
-                //then we add our piece to that spot
+                //then we add our piece to that selected row and remove from 'remove place'
                 if ((board[movingFromRow].Count != 0 && movingFromPiece < movingToPiece)) 
                 {
                     board[movingToRow].Add(movingFromPiece);
@@ -101,15 +103,11 @@ namespace towersOfHanoi
                 Console.WriteLine("INVALID MOVE! TRY AGAIN!!");
             }
 
-            //Console.WriteLine(movingToPiece+ "**");
-            /*else if (board[movingFromRow].Count == 0)
-            {
-                Console.WriteLine("NOO");
-            }*/
-
+          
         }
         public static bool GameWin()
-        {// once index row 2 on the board has all 4 pieces, the user has won the game
+        {
+            // once index row 2 on the board has all 4 pieces, the user has won the game
             if(board[2].Count == 4)
             {
                 Console.WriteLine("You Won!");
