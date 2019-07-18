@@ -27,7 +27,7 @@ namespace towersOfHanoi
         }
         
         public static void FirstBoard()
-            //setting up information for the game to print
+            //setting up information for the game to print for the beginning of the game
         {   //declaring row that will be used
             List<int> row1 = new List<int>(4);
             List<int> row2 = new List<int>(4);
