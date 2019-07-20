@@ -12,9 +12,10 @@ namespace poCos
         {
             
                 DriverLicense firstLicense = new DriverLicense("Sam", "Smith", "Male", 56483564);
-            Console.WriteLine("my name is {0} {1}, and I am {2}. My driver's license number is{3}", firstLicense.firstName,firstLicense.lastName, firstLicense.gender, firstLicense.licenseNumber);
+            Console.WriteLine("my name is {0} {1}, and I am {2}. My driver's license number is {3}", firstLicense.firstName,firstLicense.lastName, firstLicense.gender, firstLicense.licenseNumber);
 
             firstLicense.GetFullName();
+            
             Console.ReadKey();
         }
         
@@ -44,7 +45,7 @@ namespace poCos
         {
             firstName = lName;
         }
-                // in argument you dont have to name 'first name or lastname')
+                // in argument you dont have to name 'first name or lastname'
         public String GetFullName()
         {
            string FullName = firstName + lastName;
@@ -62,21 +63,7 @@ namespace poCos
         public string publisher;
         public double price;
 
-        public Book(string atitle,  string [] aauthors, int anumberOfPages, int asku, string apublisher, double aprice)
-        {
-            title = atitle;
-            authors = aauthors;
-            numberOfPages = anumberOfPages;
-            sku = asku;
-            publisher = apublisher;
-            price = aprice;
-
-        }
-
-        public String GetBookPublisher()
-        {
-            string bookPublisher = 
-        }
+        
     }
     class Airplane
     {
