@@ -12,8 +12,10 @@ namespace toDo
         public static string answer;
         static void Main(string[] args)
         {
-
+           
             ToDoItem firstItem = new ToDoItem("homework", "8-1-19", "high");
+            firstItem.DueDate = "8-1";
+          
 
             ToDoItem.AskQuestion(answer, listOfItems);
            ToDoItem.PrintOutList(listOfItems);
@@ -31,9 +33,12 @@ namespace toDo
         public string Description;
         public string DueDate;
         public String Priority;
-        
 
-   
+
+        public ToDoItem()
+        {
+
+        }
 
     public ToDoItem( string describe, string date, string importance)
         {
@@ -49,7 +54,7 @@ namespace toDo
         {
           
 
-        Console.WriteLine("Do you wan to add an item to your to do list? type 'y' for yes and 'n' for no");
+            Console.WriteLine("Do you wan to add an item to your to do list? type 'y' for yes and 'n' for no");
              answer = Console.ReadLine();
             while(answer=="y") {
                 
@@ -63,7 +68,7 @@ namespace toDo
                 Console.WriteLine("is this a high, medium, or low priority?");
                 string importance = Console.ReadLine();
 
-              listOfItems.Add(new ToDoItem(describe, date, importance));
+                listOfItems.Add(new ToDoItem(describe, date, importance)); //example of instantiatiation 'new'
 
                 Console.WriteLine("Do you wan to add an item to your to do list? type 'y' for yes and 'n' for no");
                 answer = Console.ReadLine();
@@ -77,7 +82,7 @@ namespace toDo
            
                 foreach (ToDoItem item in listOfItems)
                 {
-                    Console.WriteLine(item.Description + item.DueDate + item.Priority);
+                    Console.WriteLine("task: " + item.Description + " Due by: " + item.DueDate + " Priority: " + item.Priority);
                 }
             
             
