@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "poCos", "..\poCos\poCos.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "toDo", "..\toDo\toDo.csproj", "{C7EA37D1-18FE-4CD6-BA4C-90EE1BAC5D75}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperHeroes", "..\SuperHeroes\SuperHeroes.csproj", "{D6D34AB1-D0CB-46A1-AFC0-48AC7E52307C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{C7EA37D1-18FE-4CD6-BA4C-90EE1BAC5D75}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C7EA37D1-18FE-4CD6-BA4C-90EE1BAC5D75}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C7EA37D1-18FE-4CD6-BA4C-90EE1BAC5D75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6D34AB1-D0CB-46A1-AFC0-48AC7E52307C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6D34AB1-D0CB-46A1-AFC0-48AC7E52307C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6D34AB1-D0CB-46A1-AFC0-48AC7E52307C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6D34AB1-D0CB-46A1-AFC0-48AC7E52307C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

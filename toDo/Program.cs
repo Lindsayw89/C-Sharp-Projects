@@ -82,8 +82,10 @@ namespace toDo
            
                 foreach (ToDoItem item in listOfItems)
                 {
+                Console.WriteLine("---------------------------------------");
                     Console.WriteLine("task: " + item.Description + " Due by: " + item.DueDate + " Priority: " + item.Priority);
-                }
+                Console.WriteLine("---------------------------------------");
+            }
             
             
 

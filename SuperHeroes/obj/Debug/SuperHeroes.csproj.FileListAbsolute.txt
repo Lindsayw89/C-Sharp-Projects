@@ -1,0 +1,7 @@
+C:\Users\Linds\Documents\C#-projects\C-Sharp-Projects\SuperHeroes\bin\Debug\SuperHeroes.exe.config
+C:\Users\Linds\Documents\C#-projects\C-Sharp-Projects\SuperHeroes\bin\Debug\SuperHeroes.exe
+C:\Users\Linds\Documents\C#-projects\C-Sharp-Projects\SuperHeroes\bin\Debug\SuperHeroes.pdb
+C:\Users\Linds\Documents\C#-projects\C-Sharp-Projects\SuperHeroes\obj\Debug\SuperHeroes.csprojAssemblyReference.cache
+C:\Users\Linds\Documents\C#-projects\C-Sharp-Projects\SuperHeroes\obj\Debug\SuperHeroes.csproj.CoreCompileInputs.cache
+C:\Users\Linds\Documents\C#-projects\C-Sharp-Projects\SuperHeroes\obj\Debug\SuperHeroes.exe
+C:\Users\Linds\Documents\C#-projects\C-Sharp-Projects\SuperHeroes\obj\Debug\SuperHeroes.pdb
