@@ -26,13 +26,10 @@ namespace SuperHeroes
             HumanList.Add(hero2);
             HumanList.Add(evil1);
             HumanList.Add(evil2);
-
-            
+   
 
             foreach (Person i in HumanList)
                 i.PrintGreeting();
-
-
 
                 Console.ReadKey();
         }
@@ -46,12 +43,8 @@ namespace SuperHeroes
         {
             Name = name;
             Nickname = nname;
-
         }
-        public override string ToString()
-        {
-            return this.Name;
-        }
+      
         public virtual void PrintGreeting()
         {
             Console.WriteLine("hi my name is {0}, but you can call me {1}", Name, Nickname);
@@ -67,8 +60,8 @@ namespace SuperHeroes
      {
             RealName = rname;
             SuperPower = sPower;
-
      }
+
 
         public override void PrintGreeting()
         {
