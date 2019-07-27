@@ -27,10 +27,8 @@ namespace SuperHeroes
             HumanList.Add(evil1);
             HumanList.Add(evil2);
    
-
             foreach (Person i in HumanList)
                 i.PrintGreeting();
-
                 Console.ReadKey();
         }
     }
