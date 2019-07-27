@@ -17,7 +17,7 @@ namespace SuperHeroes
             Superhero hero2 = new Superhero("awesome person", " ", "Jessica", "Invisibility");
 
             Villian evil1 = new Villian("Doctor Evil", " ", "Austin Powers");
-            Villian evil2 = new Villian("Joker", " ", "Batman");
+            Villian evil2 = new Villian("The Joker", " ", "Batman");
 
             List<Person> HumanList = new List<Person>();
             HumanList.Add(human1);
@@ -37,17 +37,17 @@ namespace SuperHeroes
     public class Person
     {
         public string Name {get; set;}
-        public string Nickname { get; set; }
+        public string NickName { get; set; }
 
         public Person(string name, string nname )
         {
             Name = name;
-            Nickname = nname;
+            NickName = nname;
         }
       
         public virtual void PrintGreeting()
         {
-            Console.WriteLine("hi my name is {0}, but you can call me {1}", Name, Nickname);
+            Console.WriteLine("Hi my name is {0}, but you can call me {1}", Name, NickName);
         }
     }
 
@@ -79,7 +79,7 @@ namespace SuperHeroes
         }
         public override void PrintGreeting()
         {
-            Console.WriteLine("I am the {0}! Have you seen {1}?", Name, Nemesis);
+            Console.WriteLine("I am  {0}! Have you seen {1}?", Name, Nemesis);
         }
            
 
