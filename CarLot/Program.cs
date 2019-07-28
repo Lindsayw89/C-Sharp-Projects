@@ -16,17 +16,13 @@ namespace CarLot
             Vehicle car2 = new Car("KHV848", "kia", "Civic", 19000.80, "coupe", 4);
             Vehicle truck1 = new Truck("ghys564", "ford", "f150", 40000.5, "short");
             Vehicle truck2 = new Truck("ghys564", "GMC", "Canyon", 50000.5, "Standard");
-            //car1.GiveDescription();
 
             LotA.AddVehicle(car1);
             LotA.AddVehicle(car2);
             LotA.AddVehicle(truck1);
             LotB.AddVehicle(truck2);
 
-
-            //truck1.GiveDescription();
-
-           LotA.PrintInventory();
+            LotA.PrintInventory();
             LotB.PrintInventory();
 
             Console.ReadKey();
@@ -37,8 +33,6 @@ namespace CarLot
         public string Name;
         List<Vehicle> ListOfVehicles;
 
-
-
         public CarLot(string name)
         {
             Name = name;
@@ -46,22 +40,13 @@ namespace CarLot
         }
         public  void AddVehicle(Vehicle automobile)
         {
-
             ListOfVehicles.Add(automobile);
         }
         public void PrintInventory()
         {
             Console.WriteLine(Name);
             foreach (Vehicle v in ListOfVehicles)
-                //Console.WriteLine(v.GiveDescription());
-                v.GiveDescription();
-                
-                       
-            
-           // for( i=0; i<3; i++)
-           // {
-          //      Console.WriteLine(i.GiveDescription());
-          //  }
+                v.GiveDescription();          
         }
     }
 }
