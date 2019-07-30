@@ -1,0 +1,7 @@
+C:\Users\Linds\Documents\C#-projects\C-Sharp-Projects\IRentable\bin\Debug\IRentable.exe.config
+C:\Users\Linds\Documents\C#-projects\C-Sharp-Projects\IRentable\bin\Debug\IRentable.exe
+C:\Users\Linds\Documents\C#-projects\C-Sharp-Projects\IRentable\bin\Debug\IRentable.pdb
+C:\Users\Linds\Documents\C#-projects\C-Sharp-Projects\IRentable\obj\Debug\IRentable.csprojAssemblyReference.cache
+C:\Users\Linds\Documents\C#-projects\C-Sharp-Projects\IRentable\obj\Debug\IRentable.csproj.CoreCompileInputs.cache
+C:\Users\Linds\Documents\C#-projects\C-Sharp-Projects\IRentable\obj\Debug\IRentable.exe
+C:\Users\Linds\Documents\C#-projects\C-Sharp-Projects\IRentable\obj\Debug\IRentable.pdb
