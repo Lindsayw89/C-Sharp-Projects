@@ -42,7 +42,7 @@ namespace IRentable
 
     public class Boat : IRentable
     {
-        public int HourlyRate;
+        public int HourlyRate { get; set;}
         public Boat(int hourlyrate)
         {
             HourlyRate = hourlyrate;
@@ -53,13 +53,13 @@ namespace IRentable
         }
         public void GetDescription()
         {
-            Console.WriteLine("this is a boat you can rent");
+            Console.Write("This is a boat you can rent. ");
 
         }
     }
     public class House : IRentable
     {
-        public int WeeklyRate;
+        public int WeeklyRate { get; set; }
         public House(int weeklyrate)
         {
             WeeklyRate = weeklyrate;
@@ -70,13 +70,13 @@ namespace IRentable
         }
        public void GetDescription()
         {
-            Console.WriteLine("This is a house you can rent");
+            Console.Write("This is a house you can rent. ");
 
         }
     }
     public class Car : IRentable
     {
-        public int DailyRate;
+        public int DailyRate { get; set; }
 
         public Car(int dailyrate)
         {
@@ -88,7 +88,7 @@ namespace IRentable
         }
         public void GetDescription()
         {
-            Console.WriteLine("This is a car you can rent");
+            Console.Write("This is a car you can rent. ");
         }
     }
 
