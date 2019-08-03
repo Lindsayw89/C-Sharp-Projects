@@ -1,0 +1,7 @@
+C:\Users\Linds\Documents\C#-projects\C-Sharp-Projects\Checkers\obj\Debug\Checkers.csprojAssemblyReference.cache
+C:\Users\Linds\Documents\C#-projects\C-Sharp-Projects\Checkers\obj\Debug\Checkers.csproj.CoreCompileInputs.cache
+C:\Users\Linds\Documents\C#-projects\C-Sharp-Projects\Checkers\bin\Debug\Checkers.exe.config
+C:\Users\Linds\Documents\C#-projects\C-Sharp-Projects\Checkers\bin\Debug\Checkers.exe
+C:\Users\Linds\Documents\C#-projects\C-Sharp-Projects\Checkers\bin\Debug\Checkers.pdb
+C:\Users\Linds\Documents\C#-projects\C-Sharp-Projects\Checkers\obj\Debug\Checkers.exe
+C:\Users\Linds\Documents\C#-projects\C-Sharp-Projects\Checkers\obj\Debug\Checkers.pdb
