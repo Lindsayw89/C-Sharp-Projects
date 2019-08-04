@@ -12,21 +12,38 @@ namespace Checkers
         public Color team { get; private set; }
         public Position position { get; set; }
 
-        public Checker(Color team, int row, int col)
+        public Checker(Color Team, int row, int col)
         {
-            int openCircleId = int.Parse("25CB", System.Globalization.NumberStyles.HexNumber);
-            int closedCircleId = int.Parse("25CF", System.Globalization.NumberStyles.HexNumber);
-            if (Color.White==team)
+            int OpenCircleId = int.Parse("25CB", System.Globalization.NumberStyles.HexNumber);
+            int ClosedCircleId = int.Parse("25CF", System.Globalization.NumberStyles.HexNumber);
+            if (Color.Black == Team)
             {
-                symbol = char.ConvertFromUtf32(openCircleId);
+                symbol = char.ConvertFromUtf32(ClosedCircleId);
+                team = Color.Black;
+            }
+            else 
+            {
+                symbol = char.ConvertFromUtf32(OpenCircleId);
+                team = Color.White;
+
+            }
+           
+
+            position = new Position(row, col);
+           
+
+
+
+             /* int playerTurn =Color.White.
+              
+              if (playerTurn == OpenCircleId)
+            {
+                playerTurn = ClosedCircleId;
             }
             else
             {
-                symbol= char.ConvertFromUtf32(closedCircleId);
+                playerTurn = OpenCircleID;*/
             }
-
-            position = new Position(row, col);
-        }   
 
     }
 }

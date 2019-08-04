@@ -49,9 +49,7 @@ namespace Checkers
         }
 
         public void MoveChecker(Checker checker, Position dest)
-        {
-           
-            
+        {  
                 Checker piecechecker= new Checker(checker.team, dest.row, dest.col);
 
             checkers.Add(piecechecker);

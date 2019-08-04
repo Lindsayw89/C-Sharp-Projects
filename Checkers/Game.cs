@@ -16,31 +16,8 @@ namespace Checkers
 
         private bool CheckForWin()
         {
-            int blackcheckers = 0;
-            int whitecheckers = 0;
-
-            foreach( Checker c in board.checkers)
-            {
-                if (c.team==Color.Black)
-                {
-                    blackcheckers++;
-
-                }
-                if (c.team == Color.White)
-                {
-                    whitecheckers++;
-
-                }
-
-            }
-            if (blackcheckers == 0 || whitecheckers == 0)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+            //the following code is using LINQ, you should research LINQ for future lessons
+            return (board.checkers.All(x => x.team == Color.White) || board.checkers.All(x => x.team == Color.Black));
         }
 
         public void Start()
@@ -49,12 +26,32 @@ namespace Checkers
                 DrawBoard();
                 ProcessInput();
             } while (!CheckForWin());
-            Console.WriteLine("wiiner");
+            Console.WriteLine("winer");
 
         }
 
         public bool IsLegalMove(Color player, Position src, Position dest)
         {
+
+
+
+            if (src.row < 0 || src.row > 7 || (src.col) < 0 || (src.col) > 7
+               || dest.row < 0 || dest.row > 7 || (dest.col) < 0
+               || (dest.col) > 7) return false;
+
+
+            int RowDistance = Math.Abs(dest.row - src.row);
+            int ColDistance = Math.Abs(dest.col - src.col);
+
+            //Fill in the blanks in the logic..It might help to comment why you need each condition here.
+            //i.e. The line below checks to make sure that the checker cannot move in a straight line.
+            if (ColDistance == 0 || RowDistance == 0) return (false);
+            //The line below checks the slope of the checker.
+            if (RowDistance / ColDistance != 1) return (false);
+
+            if (RowDistance > 2) return (false);
+
+
             Checker c = board.GetChecker(src);
 
             if(c== null)
@@ -70,9 +67,17 @@ namespace Checkers
             {
                 return true;
             }
-            if (IsCapture(src, dest))
+
+            if (RowDistance == 2)
             {
-                return true;
+                if (IsCapture(src, dest))
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
             }
             else
             {
@@ -85,6 +90,7 @@ namespace Checkers
         {
             int RowDistance = Math.Abs(dest.row - src.row);
             int ColDistance = Math.Abs(dest.col - src.col);
+
             if (RowDistance == 2 && ColDistance == 2)
             {
                 int row_middle = (src.row + dest.row) / 2;
