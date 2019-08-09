@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IRentable", "..\IRentable\I
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Checkers", "..\Checkers\Checkers.csproj", "{C335E5D7-27DB-4B50-9AF7-DD0DA09219ED}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookInventory", "..\BookInventory\BookInventory.csproj", "{8F55028C-21BD-406E-929A-850EA2C297CC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{C335E5D7-27DB-4B50-9AF7-DD0DA09219ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C335E5D7-27DB-4B50-9AF7-DD0DA09219ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C335E5D7-27DB-4B50-9AF7-DD0DA09219ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F55028C-21BD-406E-929A-850EA2C297CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F55028C-21BD-406E-929A-850EA2C297CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F55028C-21BD-406E-929A-850EA2C297CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F55028C-21BD-406E-929A-850EA2C297CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

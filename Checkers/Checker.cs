@@ -26,23 +26,11 @@ namespace Checkers
                 symbol = char.ConvertFromUtf32(OpenCircleId);
                 team = Color.White;
 
-            }
-           
+            }    
 
             position = new Position(row, col);
            
 
-
-
-             /* int playerTurn =Color.White.
-              
-              if (playerTurn == OpenCircleId)
-            {
-                playerTurn = ClosedCircleId;
-            }
-            else
-            {
-                playerTurn = OpenCircleID;*/
             }
 
     }
