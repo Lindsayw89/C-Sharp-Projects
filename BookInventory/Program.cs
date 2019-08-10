@@ -38,22 +38,15 @@ namespace BookInventory
                 context.SaveChanges();
             }
 
-
-
-
             else
             {
                 Console.WriteLine("Invalid entry, not added");
-
             }
-
             Console.WriteLine("Current list of books are: ");
-
             foreach(Book B in context.Books)
             {
                 Console.WriteLine("{0}-{1} {2}", B.Id, B.Title, B.Author);
-            }
-            
+            }         
             Console.ReadKey();
         }
     }
