@@ -25,12 +25,8 @@ namespace Checkers
             {
                 symbol = char.ConvertFromUtf32(OpenCircleId);
                 team = Color.White;
-
             }    
-
             position = new Position(row, col);
-           
-
             }
 
     }

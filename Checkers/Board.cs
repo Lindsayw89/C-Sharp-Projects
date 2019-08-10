@@ -32,12 +32,9 @@ namespace Checkers
            foreach(Checker c in checkers)
             {
                 if (c.position.col == pos.col && c.position.row == pos.row)
-                    return c;
-               
+                    return c;  
             }
             return null;
-           
-
         }
 
         public void RemoveChecker(Checker checker)
@@ -47,7 +44,6 @@ namespace Checkers
                 checkers.Remove(checker);
             }
         }
-
         public void MoveChecker(Checker checker, Position dest)
         {  
                 Checker piecechecker= new Checker(checker.team, dest.row, dest.col);
@@ -56,6 +52,5 @@ namespace Checkers
             RemoveChecker(checker);
             
         }
-
     }
 }

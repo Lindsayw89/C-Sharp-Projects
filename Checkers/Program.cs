@@ -19,9 +19,6 @@ namespace Checkers
 
     public enum Color { White, Black }
 
-
-   
-
     class Program
     {
         public static void Main(String[] args)
