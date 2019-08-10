@@ -17,6 +17,8 @@ namespace BookInventory
             context.Database.EnsureCreated();
 
             Console.WriteLine("Enter the title and author of the book that you want to add with a ':' in between");
+            Console.WriteLine("Type 'delete' to remove a book from the list");
+
             String TitleAuthor = Console.ReadLine();
 
             string[] parts = TitleAuthor.Split(':');
