@@ -14,7 +14,6 @@ namespace CheckPoint2_ToDo
             do
             {
                 App app1 = new App();
-
                 app1.CallsMethods();
             } while (App.EndProgram());
 

@@ -65,7 +65,8 @@ namespace CheckPoint2_ToDo
         }
 
 
-            //interface bw app and database that stores todo items STORES INFO
+           
+
         
     }
 }

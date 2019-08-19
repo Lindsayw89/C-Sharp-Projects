@@ -28,16 +28,11 @@ namespace CheckPoint2_ToDo
             else if (Task == "add")
             {
               string [] addList = ConsoleUtils.MethodAdding();  ///task completed
-                CallItemRep.AddItem(addList[0], addList[1]);
-
-            
+                CallItemRep.AddItem(addList[0], addList[1]); 
             }
-
-
             else if (Task == "done list")
             {
                 List<ToDoItem> DoneList = CallItemRep.ListDoneItem();
-
                ConsoleUtils.PrintList(DoneList);  // task  listItems
                 
             }
@@ -49,16 +44,12 @@ namespace CheckPoint2_ToDo
             else if (Task == "all")
             {
                 List<ToDoItem> AllList = CallItemRep.StoreInfo();
-
                 ConsoleUtils.PrintList(AllList);
-
             }
             else
             {
                 Console.WriteLine("typo error, make sure all letters are lowercase");
             }
-
-      
 
         }
         public static bool EndProgram()
@@ -72,7 +63,6 @@ namespace CheckPoint2_ToDo
             else if (answer == "n")
             {
                 return false;
-
             }
             else
                 return true;
