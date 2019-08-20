@@ -51,7 +51,9 @@ namespace CheckPoint2_ToDo
         {
             foreach (ToDoItem T in ListItems)
             {
+                Console.WriteLine("* * * * * * * * * * * * * * * *");
                 Console.WriteLine("{0}-- {1}-- {2} ", T.Id, T.Description, T.Done);
+                
             }
         }
         
