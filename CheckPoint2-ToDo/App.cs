@@ -30,6 +30,7 @@ namespace CheckPoint2_ToDo
               string [] addList = ConsoleUtils.MethodAdding();  ///task completed
                 CallItemRep.AddItem(addList[0], addList[1]); 
             }
+           
             else if (Task == "done list")
             {
                 List<ToDoItem> DoneList = CallItemRep.ListDoneItem();

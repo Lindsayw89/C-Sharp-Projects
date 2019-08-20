@@ -13,7 +13,7 @@ namespace CheckPoint2_ToDo
 
         public static string AskForToDo()
         {
-            Console.WriteLine("what do you want to do");
+            Console.WriteLine("what do you want to do?");
             Console.WriteLine("type 'delete' to delete an item, 'add' to add an item");
             Console.WriteLine("type 'done list', to list all completed items, 'pending list' to list all pending items','all' to list all");
             string Task = Console.ReadLine();
@@ -39,6 +39,13 @@ namespace CheckPoint2_ToDo
             Console.WriteLine(  "what Id do you want to delete?");
             int ID = Convert.ToInt32(Console.ReadLine());
             return ID;
+        }
+        public static int UpdateConsole()// need to fix
+        {
+            
+            Console.WriteLine("which item do you want to update?");
+            int Id = Convert.ToInt32(Console.ReadLine());   
+            return Id;
         }
         public static void PrintList(List<ToDoItem> ListItems) // took out string task argument  string Description, List<ToDoItem> ListItems, ItemContext context, string done
         {
