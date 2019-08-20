@@ -34,7 +34,7 @@ namespace CheckPoint2_ToDo
         }
         public List<ToDoItem> ListPendingItem()  // not done
         {
-            IEnumerable<ToDoItem> ListItems = context.itemRepositories.Where(X=>X.Done=="pending";
+            IEnumerable<ToDoItem> ListItems = context.itemRepositories.Where(X=>X.Done=="pending");
             return ListItems.ToList();
 
         }
